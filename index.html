@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code As I Code</title>
-  </head>
-  <body>
-    <header>
-      <h1>{{ Code as I Code }}</h1>
-    </header>
-    <main>
-      <h1 class="">Weboldal IT iránt érdeklődőknek</h1>
-      <p>
-        Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról,
-        programozásról, technológiákról.
-      </p>
-    </main>
-    <footer>
-      <p>Az oldal kizárólag HTML, CSS és Javascipt nyelveken íródott.</p>
-    </footer>
-  </body>
-</html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code As I Code</title>
+</head>
+
+<body>
+  <header>
+    <h1>{{ Code as I Code }}</h1>
+    <a href="#de" data-reload>Deutsch</a>
+    <a href="#en" data-reload>English</a>
+    <a href="#hu" data-reload>Magyar</a>
+  </header>
+  <main>
+    <h1 id="title">Weboldal IT iránt érdeklődőknek</h1>
+    <p id="content">
+      Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról,
+      programozásról, technológiákról.
+    </p>
+  </main>
+  <footer>
+    <p id="technology">Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.</p>
+  </footer>
+  <script>
+    var dataReload = document.querySelectorAll("[data-reload]");
+
+    var language = {
+      de: {
+        content: `Was wirdst du hier finden? Unter anderem Blogeinträge, Kursen über IT,
+            Programmierung und Technologie.`,
+        technology: "Die Seite ist in HTML, CSS und JavaScript entwickelt.",
+        title: "Eine Webseite für IT-Begeisterte",
+      },
+      en: {
+        content: `What will you find here? Blogposts and courses about IT, programming and
+            technology.`,
+        technology: "The Website is developed in HTML, CSS and JavaScript.",
+        title: "A Website for IT Enthusiasts",
+      },
+      hu: {
+        content: `Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról, programozásról,
+            technológiákról.`,
+        technology: "Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.",
+        title: "Weboldal IT iránt érdeklődőknek",
+      },
+    };
+
+    if (window.location.hash) {
+      switch (window.location.hash) {
+        case "#de":
+          content.textContent = language.de.content;
+          technology.textContent = language.de.technology;
+          title.textContent = language.de.title;
+          break;
+        case "#en":
+          content.textContent = language.en.content;
+          technology.textContent = language.en.technology;
+          title.textContent = language.en.title;
+          break;
+        default:
+          content.textContent = language.hu.content;
+          technology.textContent = language.hu.technology;
+          title.textContent = language.hu.title;
+          break;
+      }
+    }
+
+    dataReload.forEach((anchor) => {
+      anchor.onclick = (event) => {
+        window.location.hash = event.target.hash;
+        window.location.reload();
+      }
+    });
+  </script>
+</body>
+
+</html
