@@ -5,45 +5,147 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Code As I Code</title>
+  <style>
+    body {
+      background-color: #192330;
+      font-family: Fira Mono, DejaVu Sans Mono, monospace;
+    }
+
+    header h1 {
+      text-align: center;
+      color: transparent;
+      background-image: linear-gradient(45deg, #0084C5, #C6466B);
+      background-clip: text;
+      font-size: 48px;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 8px;
+      padding: 16px;
+      color: #0089AB;
+      background-color: #121a24;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      color: #008A7E;
+    }
+
+    main {
+      margin: 0 auto;
+      width: 640px;
+    }
+
+    main h1 {
+      color: #A54B03;
+      text-align: center;
+    }
+
+    main p {
+      color: #747F88;
+      text-align: center;
+      font-style: italic;
+    }
+
+    section h3 {
+      color: #7A3905;
+      font-size: 28px;
+      text-align: center;
+    }
+
+    #technologies {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    .technology {
+      display: flex;
+      justify-content: space-between;
+      margin: 16px;
+      padding: 16px 32px;
+      background-color: #01182A;
+      border-radius: 20px;
+      max-width: 320px;
+    }
+
+    .technology h4 {
+      color: #C6466B;
+      padding: 0 16px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    footer p {
+      text-align: center;
+      color: #686000;
+    }
+  </style>
 </head>
 
 <body>
   <header>
     <h1>{{ Code as I Code }}</h1>
+  </header>
+  <nav>
     <a href="#de" data-reload>Deutsch</a>
     <a href="#en" data-reload>English</a>
     <a href="#hu" data-reload>Magyar</a>
-  </header>
+  </nav>
   <main>
     <h1 id="title">Weboldal IT iránt érdeklődőknek</h1>
     <p id="content">
       Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról,
       programozásról, technológiákról.
     </p>
+    <section>
+      <h3 id="technologyTitle">Technologiák</h3>
+      <div id="technologies">
+        <div class="technology">
+          <h4>Golang</h4>
+          <img src="assets/images/gopher.svg" alt="gopher" height="100px">
+        </div>
+        <div class="technology">
+          <h4>VueJS</h4>
+          <img src="assets/images/vuejs.svg" alt="gopher" height="100px">
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-    <p id="technology">Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.</p>
+    <p id="remark">Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.</p>
   </footer>
   <script>
     var dataReload = document.querySelectorAll("[data-reload]");
 
     var language = {
       de: {
-        content: `Was wirdst du hier finden? Unter anderem Blogeinträge, Kursen über IT,
-            Programmierung und Technologie.`,
-        technology: "Die Seite ist in HTML, CSS und JavaScript entwickelt.",
+        content: `/* Was wirdst du hier finden? Unter anderem Blogeinträge, Kursen über IT,
+            Programmierung und Technologie. */`,
+        remark: "Die Seite ist in HTML, CSS und JavaScript entwickelt.",
+        technologyTitle: "Technologien",
         title: "Eine Webseite für IT-Begeisterte",
       },
       en: {
-        content: `What will you find here? Blogposts and courses about IT, programming and
-            technology.`,
-        technology: "The Website is developed in HTML, CSS and JavaScript.",
+        content: `/* What will you find here? Blogposts and courses about IT, programming and
+            technology. */`,
+        remark: "The Website is developed in HTML, CSS and JavaScript.",
+        technologyTitle: "Technologies",
         title: "A Website for IT Enthusiasts",
       },
       hu: {
-        content: `Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról, programozásról,
-            technológiákról.`,
-        technology: "Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.",
+        content: `/* Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról, programozásról,
+            technológiákról. */`,
+        technologyTitle: "Technológiák",
+        remark: "Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.",
         title: "Weboldal IT iránt érdeklődőknek",
       },
     };
@@ -52,17 +154,20 @@
       switch (window.location.hash) {
         case "#de":
           content.textContent = language.de.content;
-          technology.textContent = language.de.technology;
+          remark.textContent = language.de.remark;
+          technologyTitle.textContent = language.de.technologyTitle
           title.textContent = language.de.title;
           break;
         case "#en":
           content.textContent = language.en.content;
-          technology.textContent = language.en.technology;
+          remark.textContent = language.en.remark;
+          technologyTitle.textContent = language.en.technologyTitle
           title.textContent = language.en.title;
           break;
         default:
           content.textContent = language.hu.content;
-          technology.textContent = language.hu.technology;
+          remark.textContent = language.hu.remark;
+          technologyTitle.textContent = language.hu.technologyTitle
           title.textContent = language.hu.title;
           break;
       }
