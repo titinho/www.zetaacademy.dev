@@ -5,89 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Code As I Code</title>
-  <style>
-    body {
-      background-color: #192330;
-      font-family: Fira Mono, DejaVu Sans Mono, monospace;
-    }
-
-    header h1 {
-      text-align: center;
-      color: transparent;
-      background-image: linear-gradient(45deg, #0084C5, #C6466B);
-      background-clip: text;
-      font-size: 48px;
-    }
-
-    nav {
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 8px;
-      padding: 16px;
-      color: #0089AB;
-      background-color: #121a24;
-      border-radius: 12px;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-    nav a:hover {
-      color: #008A7E;
-    }
-
-    main {
-      margin: 0 auto;
-      width: 960px;
-    }
-
-    main h1 {
-      color: #A54B03;
-      text-align: center;
-    }
-
-    main p {
-      color: #747F88;
-      text-align: center;
-      font-style: italic;
-    }
-
-    section h3 {
-      color: #7A3905;
-      font-size: 28px;
-      text-align: center;
-    }
-
-    #technologies {
-      display: flex;
-      margin: 0 auto;
-    }
-
-    .technology {
-      display: flex;
-      justify-content: space-between;
-      margin: 16px;
-      padding: 16px 32px;
-      background-color: #01182A;
-      border-radius: 20px;
-      max-width: 320px;
-    }
-
-    .technology h4 {
-      color: #C6466B;
-      padding: 0 16px;
-      font-size: 24px;
-      text-align: center;
-    }
-
-    footer p {
-      text-align: center;
-      color: #686000;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -126,63 +44,7 @@
   <footer>
     <p id="remark">Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.</p>
   </footer>
-  <script>
-    var dataReload = document.querySelectorAll("[data-reload]");
-
-    var language = {
-      de: {
-        content: `/* Was wirdst du hier finden? Unter anderem Blogeinträge, Kursen über IT,
-            Programmierung und Technologie. */`,
-        remark: "Die Seite ist in HTML, CSS und JavaScript entwickelt.",
-        technologyTitle: "Technologien",
-        title: "Eine Webseite für IT-Begeisterte",
-      },
-      en: {
-        content: `/* What will you find here? Blogposts and courses about IT, programming and
-            technology. */`,
-        remark: "The Website is developed in HTML, CSS and JavaScript.",
-        technologyTitle: "Technologies",
-        title: "A Website for IT Enthusiasts",
-      },
-      hu: {
-        content: `/* Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról, programozásról,
-            technológiákról. */`,
-        technologyTitle: "Technológiák",
-        remark: "Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.",
-        title: "Weboldal IT iránt érdeklődőknek",
-      },
-    };
-
-    if (window.location.hash) {
-      switch (window.location.hash) {
-        case "#de":
-          content.textContent = language.de.content;
-          remark.textContent = language.de.remark;
-          technologyTitle.textContent = language.de.technologyTitle
-          title.textContent = language.de.title;
-          break;
-        case "#en":
-          content.textContent = language.en.content;
-          remark.textContent = language.en.remark;
-          technologyTitle.textContent = language.en.technologyTitle
-          title.textContent = language.en.title;
-          break;
-        default:
-          content.textContent = language.hu.content;
-          remark.textContent = language.hu.remark;
-          technologyTitle.textContent = language.hu.technologyTitle
-          title.textContent = language.hu.title;
-          break;
-      }
-    }
-
-    dataReload.forEach((anchor) => {
-      anchor.onclick = (event) => {
-        window.location.hash = event.target.hash;
-        window.location.reload();
-      }
-    });
-  </script>
+  <script src"main.js"></script>
 </body>
 
 </html
