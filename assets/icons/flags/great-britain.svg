@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150">
+  <rect width="300" height="150" style="fill: #fff;"/>
+  <path
+    d="M 0 60 L 135 60 L 135 0 L 165 0 L 165 60 L 300 60 L 300 90 L 165 90 L 165 150 L 135 150 L 135 90 L 0 90 Z"
+    style="fill: #CF142B;"
+  />
+  <path d="M 0 0 L 101.45 50 L 79.01 50 L 0 11.18 Z" style="fill: #CF142B;" />
+  <path d="M 300 0 L 200 50 L 177.64 50 L 277.64 0 Z" style="fill: #CF142B;" />
+  <path d="M 300 150 L 200 100 L 222.36 100 L 300 138.82 Z" style="fill: #CF142B;" />
+  <path d="M 0 150 L 100 100 L 122.36 100 L 22.36 150 Z" style="fill: #CF142B;" />
+  <path d="M 0 16.77 L 0 50 L 67.92 50 Z" style="fill: #012169;" />
+  <path d="M 0 133.23 L 0 100 L 67.92 100 Z" style="fill: #012169;" />
+  <path d="M 33.54 0 L 125 0 L 125 45 Z" style="fill: #012169;" />
+  <path d="M 33.54 150 L 125 150 L 125 105 Z" style="fill: #012169;" />
+  <path d="M 175 150 L 175 105 L 266.46 150 Z" style="fill: #012169;" />
+  <path d="M 175 0 L 175 45 L 266.46 0 Z" style="fill: #012169;" />
+  <path d="M 300 16.77 L 300 50 L 232.08 50 Z" style="fill: #012169;" />
+  <path d="M 300 133.23 L 300 100 L 232.08 100 Z" style="fill: #012169;" />
+</svg>
+

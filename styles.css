@@ -1,27 +1,76 @@
-body {
-  background-color: #192330;
-  font-family:
-    Fira Mono,
-    DejaVu Sans Mono,
-    monospace;
+/* Variables */
+:root {
+  --primary: #a54b03;
+  --secondary: #817603;
+  --background-default: #192330;
+  --background-emphasised: #01182a;
 }
 
-header h1 {
+/* Base style */
+body {
+  /* Reset */
+  margin: 0;
+  padding: 0;
+
+  /* New rules */
+  font-family: "Fira Mono", "DejaVu Sans Mono", monospace;
+  font-size: 16px;
+  background-color: #192330;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-align: center;
+}
+
+h1 {
   color: transparent;
   background-image: linear-gradient(45deg, #0084c5, #c6466b);
   background-clip: text;
-  font-size: 48px;
+  font-size: 2rem;
 }
 
+h2 {
+  color: #a54b03;
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: #7a3905;
+  font-size: 1.2rem;
+}
+
+/* Navigation */
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: var(--background-emphasised);
+  text-align: right;
+}
+
+#mobile-logo {
+  margin: 4px;
+  height: 24px;
+  border: 1px solid var(--background-emphasised);
+}
+
+#mobile-logo:hover {
+  border: 1px solid var(--secondary);
+}
+
+#desktop-logo {
+  display: none;
 }
 
 nav a {
   display: inline-block;
-  margin: 8px;
-  padding: 16px;
+  margin: 4px;
   color: #0089ab;
   background-color: #121a24;
   border-radius: 12px;
@@ -30,18 +79,18 @@ nav a {
   text-transform: uppercase;
 }
 
-nav a:hover {
-  color: #008a7e;
+.flags {
+  height: 24px;
+  border: 1px solid var(--background-default);
+  border-radius: 4px;
+}
+
+.flags:hover {
+  border: 1px solid var(--secondary);
 }
 
 main {
-  margin: 0 auto;
-  width: 960px;
-}
-
-main h1 {
-  color: #a54b03;
-  text-align: center;
+  margin: 8px;
 }
 
 main p {
@@ -50,35 +99,46 @@ main p {
   font-style: italic;
 }
 
-section h3 {
-  color: #7a3905;
-  font-size: 28px;
-  text-align: center;
-}
-
 #technologies {
-  display: flex;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .technology {
+  grid-column: 1/5;
   display: flex;
-  justify-content: space-between;
-  margin: 16px;
-  padding: 16px 32px;
+  justify-content: space-around;
+  margin: 8px auto;
+  padding: 24px 32px;
   background-color: #01182a;
   border-radius: 20px;
-  max-width: 320px;
+  min-width: 320px;
 }
 
 .technology h4 {
   color: #c6466b;
-  padding: 0 16px;
-  font-size: 24px;
+  padding: 0 auto;
+  font-size: 20px;
   text-align: center;
 }
 
 footer p {
+  margin: 16px;
   text-align: center;
   color: #686000;
+}
+
+/* mobile styles */
+@media screen and (width >= 620px) {
+}
+
+/* tablet styles */
+@media screen and (width >= 960px) {
+}
+
+/* desktop styles */
+@media screen and (width >= 1200px) {
+  .technology {
+    grid-column: 1/3;
+  }
 }

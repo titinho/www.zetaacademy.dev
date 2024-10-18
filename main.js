@@ -1,4 +1,7 @@
 var dataReload = document.querySelectorAll("[data-reload]");
+var britishFlag = document.getElementById("british-flag");
+var germanFlag = document.getElementById("german-flag");
+var hungarianFlag = document.getElementById("hungarian-flag");
 
 var language = {
   de: {
@@ -31,18 +34,33 @@ if (window.location.hash) {
       remark.textContent = language.de.remark;
       technologyTitle.textContent = language.de.technologyTitle;
       title.textContent = language.de.title;
+
+      // Hide the flag of the displayed language
+      britishFlag.style.display = "block";
+      germanFlag.style.display = "none";
+      hungarianFlag.style.display = "block";
       break;
     case "#en":
       content.textContent = language.en.content;
       remark.textContent = language.en.remark;
       technologyTitle.textContent = language.en.technologyTitle;
       title.textContent = language.en.title;
+
+      // Hide the flag of the displayed language
+      britishFlag.style.display = "none";
+      germanFlag.style.display = "block";
+      hungarianFlag.style.display = "block";
       break;
     default:
       content.textContent = language.hu.content;
       remark.textContent = language.hu.remark;
       technologyTitle.textContent = language.hu.technologyTitle;
       title.textContent = language.hu.title;
+
+      // Hide the flag of the displayed language
+      britishFlag.style.display = "inline";
+      germanFlag.style.display = "inline";
+      hungarianFlag.style.display = "none";
       break;
   }
 }
