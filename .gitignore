@@ -1,2 +1,5 @@
+# Folders
+.vscode/
+
 # Mac specific file
 .DS_Store
