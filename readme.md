@@ -5,7 +5,7 @@
 The source code of the site is available under The GPLv3 License (GPLv3). Further information is
 here and in the LICENSE file.
 
-Copyright (c) 2022
+Copyright (c) 2025
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

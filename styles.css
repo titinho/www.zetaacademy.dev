@@ -9,8 +9,7 @@
 /* Base style */
 body {
   /* Reset */
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
 
   /* New rules */
   font-family: "Fira Mono", "DejaVu Sans Mono", monospace;
@@ -47,11 +46,12 @@ h3 {
 /* Navigation */
 nav {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2px;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
   background-color: var(--background-emphasised);
-  text-align: right;
 }
 
 #mobile-logo {
@@ -90,7 +90,7 @@ nav a {
 }
 
 main {
-  margin: 8px;
+  padding: 0 1rem;
 }
 
 main p {
@@ -99,20 +99,23 @@ main p {
   font-style: italic;
 }
 
+/* Technologies -------------------------------------------------------------------------------- */
 #technologies {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: stretch;
+  align-items: center;
+  gap: 1rem;
 }
 
 .technology {
-  grid-column: 1/5;
   display: flex;
-  justify-content: space-around;
-  margin: 8px auto;
-  padding: 24px 32px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
   background-color: #01182a;
-  border-radius: 20px;
-  min-width: 320px;
+  border-radius: 1.5rem;
 }
 
 .technology h4 {
@@ -130,6 +133,9 @@ footer p {
 
 /* mobile styles */
 @media screen and (width >= 620px) {
+  /* #technologies { */
+  /*   grid-template-columns: 1fr 1fr; */
+  /* } */
 }
 
 /* tablet styles */
@@ -138,7 +144,12 @@ footer p {
 
 /* desktop styles */
 @media screen and (width >= 1200px) {
-  .technology {
-    grid-column: 1/3;
+  body {
+    width: 1280px;
   }
+
+  /* Technologies ------------------------------------------------------------------------------ */
+  /* .technology { */
+  /*   grid-column: 1/3; */
+  /* } */
 }
