@@ -1,52 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="hu-HU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeta Academy</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zeta Academy</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-
-<body>
-  <header>
-    <h1>Zeta Academy</h1>
-  </header>
-  <nav>
-    <a href="#de" data-reload>Deutsch</a>
-    <a href="#en" data-reload>English</a>
-    <a href="#hu" data-reload>Magyar</a>
-
-  </nav>
-  <main>
-    <h1 id="title">Weboldal IT iránt érdeklődőknek</h1>
-    <p id="content">
-      /* Mit fogsz itt találni? Blogbejegyzéseket, kurzusokat IT-ról,
-      programozásról, technológiákról. */
-    </p>
-    <section>
-      <h3 id="technologyTitle">Technologiák</h3>
-      <div id="technologies">
-        <div class="technology">
-          <h4>Golang</h4>
-          <img src="assets/images/go.png" alt="gopher" height="64px">
-        </div>
-        <div class="technology">
-          <h4>VueJS</h4>
-          <img src="assets/images/vuejs.png" alt="gopher" height="64px">
-        </div>
-        <div class="technology">
-          <h4>Ziglang</h4>
-          <img src="assets/images/ziggy.svg" alt="gopher" height="64px">
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p id="remark">Az oldal kizárólag HTML, CSS és JavaScript nyelveken íródott.</p>
-  </footer>
-  <script type="text/javascript" src="main.js"></script>
-</body>
-
-</html
+  <body>
+    <script type="text/javascript">
+      const userLang = navigator.language || navigator.userLanguage;
+      switch (userLang.substring(0, 2)) {
+        case "de":
+          window.location.replace("/de");
+        case "hu":
+          window.location.replace("/hu");
+        default:
+          window.location.replace("/en");
+      }
+    </script>
+  </body>
+</html>
