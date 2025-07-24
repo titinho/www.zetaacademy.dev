@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="hu-HU">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurzusok | Zeta Academy</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
+    <link rel="stylesheet" href="../../assets/styles/main.css" />
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
@@ -13,18 +26,18 @@
 
       gtag("config", "G-H2GDYC1PFY");
     </script>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zeta Academy - Kurzusok</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
-    <link rel="stylesheet" href="../../assets/styles/main.css" />
   </head>
 
   <body>
+    <div class="announcement-bar warning">
+      <span>Az oldal fejlesztés alatt áll!</span>
+      <button>
+        <img
+          src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark-white-32x32.png"
+          alt="xmark" />
+      </button>
+    </div>
+
     <header class="site-header">
       <span><a href="../index.html">Zeta Academy</a></span>
       <nav class="site-navigation">
@@ -38,15 +51,9 @@
     </header>
 
     <main>
-	    <div class="announcement-bar warning">
-	      <span>Az oldal fejlesztés alatt áll!</span>
-	      <button>
-		<img
-		  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark-white-32x32.png"
-		  alt="xmark" />
-	      </button>
-	    </div>
-      <h1>Kurzusok</h1>
+			<article>
+      	<h1>Kurzusok</h1>
+			</article>
     </main>
 
     <footer class="site-footer">
@@ -70,7 +77,10 @@
         </li>
         <li>
           <a href="#">
-            <img class="x" src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x.png" alt="X Icon" />
+            <img
+							class="x"
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x.png"
+							alt="X Icon" />
           </a>
         </li>
         <li>
@@ -85,6 +95,6 @@
       <p>&copy; 2025. Zeta Academy. Minden jog fenntartva.</p>
     </footer>
 
-    <script src="../scripts/main.js"></script>
+    <script src="../../scripts/main.js" type="module"></script>
   </body>
 </html>

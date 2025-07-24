@@ -624,19 +624,19 @@ table tbody tr:last-child td {
 }
 
 .site-footer .facebook:hover {
-  content: url(../icons/social/facebook-hover.png);
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/facebook-hover.png);
 }
 
 .site-footer .instagram:hover {
-  content: url(../icons/social/instagram-hover.png);
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/instagram-hover.png);
 }
 
 .site-footer .x:hover {
-  content: url(../icons/social/x-hover.png);
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x-hover.png);
 }
 
 .site-footer .threads:hover {
-  content: url(../icons/social/threads-hover.png);
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/threads-hover.png);
 }
 
 .site-footer p {
