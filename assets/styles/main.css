@@ -1,26 +1,30 @@
 /* Variables */
 :root {
-  --grotto: #0476d0;
-  --grotto-tint-200: #248de0;
-  --grotto-tint-800: #f1f7fb;
-  --grotto-tint-900: #f5f8fb;
-  --cyan: #008a7e;
-  --deep-rose: #c6466b;
-  --deep-rose--hover: #e14572;
+	--chambray: 58, 97, 135;
+  --cranberry: 225, 69, 114;
+  --cyan: 0, 138, 126;
+  --deep-rose: 198, 70, 107;
+  --grotto: 4, 118, 208;
+  --grotto-shade-800: 205, 228, 246;
+  --grotto-shade-900: 230, 241, 250;
+  --grotto-tint-200: 3, 94, 166;
+  --grotto-tint-800: 1, 24, 42;
+  --grotto-tint-900: 0, 12, 21;
+	--midnight-blue: 0, 48, 96;
   --mongo: 234, 106, 4;
-  --teal: #0089ab;
+  --teal: 0, 137, 171;
   --white: 255, 255, 255;
 
-  --primary: #003060;
-  --primary-hover: #3a6187;
-  --secondary: var(--grotto);
-  --secondary-hover: var(--grotto-tint-200);
-  --accent: var(--deep-rose);
-  --background-default: var(--grotto-tint-900);
-  --background-emphasised: var(--grotto-tint-800);
-  --btn__background: var(--deep-rose);
-  --btn__background--hover: var(--deep-rose--hover);
-  --btn__txt: var(--grotto-tint-900);
+  --primary: rgba(var(--midnight-blue), 1);
+  --primary-hover: rgba(var(--chambray), 1);
+  --secondary: rgba(var(--grotto), 1);
+  --secondary-hover: rgba(var(--grotto-tint-200), 1);
+  --accent: rgba(var(--deep-rose), 1);
+  --background-default: rgba(var(--grotto-shade-800), 1);
+  --background-emphasised: rgba(var(--grotto-shade-900), 1);
+  --btn__background: rgba(var(--deep-rose), 1);
+  --btn__background--hover: rgba(var(--cranberry), 1);
+  --btn__txt: rgba(var(--grotto-shade-900), 1);
 
   --surface-warning: rgba(var(--mongo), 0.8);
   --text-header: var(--primary);
@@ -169,7 +173,7 @@
   }
 
 	span.highlight {
-		background-color: var(--grotto-tint-800);
+		background-color: rgba(var(--grotto-tint-800), 1);
 		font-family: monospace;
 	}
 }
@@ -605,7 +609,7 @@ table {
 
 table thead {
   background-color: var(--primary);
-  color: var(--grotto-tint-900);
+  color: var(rgba(--grotto-tint-900));
 }
 
 table th {
@@ -625,7 +629,7 @@ table td {
 }
 
 table tbody tr:hover {
-  background-color: var(--grotto-tint-800);
+  background-color: var(rgba(--grotto-tint-800));
 }
 
 table tbody tr:last-child td {
