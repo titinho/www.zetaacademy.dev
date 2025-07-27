@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="hu-HU">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fogalmak | Zeta Academy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
+        <link rel="stylesheet" href="../assets/styles/main.css" />
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-H2GDYC1PFY");
+        </script>
+    </head>
+
+    <body>
+        <div class="announcement-bar warning">
+            <span>Az oldal fejlesztés alatt áll!</span>
+            <button>
+                <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark-white-32x32.png"
+                    alt="xmark" />
+            </button>
+        </div>
+        <header class="site-header">
+            <span><a href="index.html">Zeta Academy</a></span>
+            <nav class="site-navigation">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="kurzusok/index.html">Kurzusok</a></li>
+                    <li><a href="tanosvenyek/index.html">Tanösvények</a></li>
+                    <li><a href="rolunk.html">Rólunk</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+					<article>
+						<h1>Definíciók</h1>
+            <section>
+							<dl>
+								<dt id="dynamic-typing"><dfn>Dinamikusan típusos programozási nyelv</dfn></dt>
+								<dd>
+									A programozási nyelv típusainak ellenőrzése a futás alatt (futási időben)
+									történik. Például: JavaScript, PHP, Python, Ruby.
+								</dd>
+
+								<dt id="strong-typing"><dfn>Erősen típusos programozási nyelv</dfn></dt>
+								<dd>
+									A programozási nyelv nem engedi, hogy a különböző típusokon műveleteket
+									végezzünk, például
+									<span class="hightlight">"Az eremény: " 5 + 5</span>
+									és ekkor a program automatikusan hibára fut. Ilyen nyelvek például: Java, Python,
+									Rust.
+								</dd>
+
+								<dt id="weak-typing"><dfn>Gyengén típusos programozási nyelv</dfn></dt>
+								<dd>
+									A programozási nyelv megengedi, hogy a különböző típusokon műveleteket végezzünk,
+									például
+									<span class="hightlight">"Az eremény: " 5 + 5</span>
+									egy érvényes kifejezés. Ilyen nyelvek például: C, JavaScript, PHP
+								</dd>
+
+								<dt id="static-typing"><dfn>Statikusan típusos programozási nyelv</dfn></dt>
+								<dd>
+									A programozási nyelv típusainak ellenőrzése a futás előtt (fordítási időben)
+									történik. Például: C, C++, C#, Go, Rust, TypeScript.
+								</dd>
+							</dl>
+            </section>
+					</article>
+        </main>
+
+        <footer class="site-footer">
+            <span><a href="index.html">Zeta Academy</a></span>
+            <ul class="social">
+                <li>
+                    <a href="#">
+                        <img
+                            class="facebook"
+                            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/facebook.png"
+                            alt="Facebook Icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img
+                            class="instagram"
+                            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/instagram.png"
+                            alt="Instagram Icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img
+                            class="x"
+                            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x.png"
+                            alt="X Icon" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img
+                            class="threads"
+                            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/threads.png"
+                            alt="Threads Icon" />
+                    </a>
+                </li>
+            </ul>
+            <p>&copy; 2025. Zeta Academy. Minden jog fenntartva.</p>
+        </footer>
+
+        <script src="../scripts/main.js" type="module"></script>
+    </body>
+</html>
