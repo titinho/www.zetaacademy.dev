@@ -1,0 +1,210 @@
+.home-layout {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem;
+}
+
+/* Courses ------------------------------------------------------------------------------------- */
+.courses {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin: 0 1rem;
+  max-width: 1280px;
+}
+
+.courses .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.course {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary);
+  background: var(--background-emphasised);
+}
+
+.course:hover {
+  border-color: var(--primary-hover);
+}
+
+.course-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-header-technology {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.course-header-technology img {
+  height: 1.5rem;
+}
+
+.course-header-technology span {
+  font-weight: 700;
+}
+
+.course-header-rating {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.course-header-rating img {
+  width: 1.25rem;
+}
+
+.course-body h3 a {
+  font-size: 1.5rem;
+  text-align: start;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.course-body h3:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.course-body p {
+  text-align: justify;
+  color: var(--text-body);
+}
+
+.course-footer p {
+  font-weight: 700;
+}
+
+.courses .action {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+
+/* Path ---------------------------------------------------------------------------------------- */
+.paths {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin: 0 1rem;
+  max-width: 1280px;
+}
+
+.paths .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.path {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary);
+  background: var(--background-emphasised);
+}
+
+.path:hover {
+  border-color: var(--primary-hover);
+}
+
+.path-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.path-header-technology {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.path-header-technology img {
+  height: 1.5rem;
+}
+
+.path-header-technology span {
+  font-weight: 700;
+}
+
+.path-header-rating {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.path-header-rating img {
+  width: 1.25rem;
+}
+
+.path-body h3 a {
+  font-size: 1.5rem;
+  text-align: start;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.path-body h3:hover {
+  text-decoration: underline;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.path-body p {
+  text-align: justify;
+  color: var(--text-body);
+}
+
+.path-footer p {
+  font-weight: 700;
+}
+
+.paths .action {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+
+/* Mobile styles */
+@media screen and (width >= 620px) {
+	.courses, .paths {
+		margin: 0 2rem;
+	}
+}
+
+/* Tablet styles */
+@media screen and (width >= 960px) {
+  .courses .container, .paths .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Desktop styles */
+@media screen and (width >= 1200px) {
+	.courses, .paths {
+		margin: 0 auto;
+	}
+
+  .courses .container, .paths .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

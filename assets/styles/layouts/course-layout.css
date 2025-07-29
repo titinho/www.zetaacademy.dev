@@ -1,0 +1,34 @@
+/* Course curriculum */
+.course-description {
+	margin: 0 1rem;
+}
+ 
+.course-curriculum {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: 0 1rem;
+}
+
+.course-curriculum h2 {
+	text-align: center;
+}
+
+/* Medium styles */
+@media screen and (width >= 620px) {
+	.course-description, .course-curriculum {
+		margin: 0 2rem;
+	}
+}
+
+/* Large styles */
+@media screen and (width >= 960px) {}
+
+/* Extra large styles */
+@media screen and (width >= 1200px) {
+	.course-description, .course-curriculum {
+		margin: 0 auto;
+		max-width: min(1280px, calc(100vw - 4rem));
+	}
+}
+

@@ -1,0 +1,45 @@
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2rem;
+}
+
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2rem;
+}
+
+article {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+h1 {
+	font-family: var(--heading);
+	font-size: 2rem;
+	text-align: center;
+	color: var(--primary);
+}
+
+h2 {
+	font-size: 1.75rem;
+	color: var(--primary);
+}
+
+p {
+	padding: 0.5rem 0;
+}
+
+a {
+	font-size: 1.25rem;
+	text-decoration: none;
+	color: var(--anchor);
+}
+
+a:hover {
+	color: var(--anchor--hover);
+}
+
+/* Mobile styles */
+@media screen and (width >= 620px) {}

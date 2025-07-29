@@ -13,7 +13,15 @@
       rel="icon"
       type="image/x-icon"
       href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
-    <link href="../assets/styles/main.css" rel="stylesheet"/>
+    <link href="../assets/styles/base/variables.css" rel="stylesheet"/>
+    <link href="../assets/styles/base/reset.css" rel="stylesheet"/>
+    <link href="../assets/styles/base/base.css" rel="stylesheet"/>
+    <link href="../assets/styles/layouts/home-layout.css" rel="stylesheet"/>
+    <link href="../assets/styles/components/announcement-bars.css" rel="stylesheet"/>
+    <link href="../assets/styles/components/buttons.css" rel="stylesheet"/>
+    <link href="../assets/styles/components/footer.css" rel="stylesheet"/>
+    <link href="../assets/styles/components/header.css" rel="stylesheet"/>
+    <link href="../assets/styles/components/hero.css" rel="stylesheet"/>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
@@ -50,203 +58,202 @@
       </nav>
     </header>
 
-    <main>
-      <section class="welcome">
-        <h1>Lépj be a technológia világába!</h1>
-        <div class="technologies">
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-64x64.png"
-            alt="Gopher Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ferris-64x64.png"
-            alt="Ferris Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-64x64.png"
-            alt="JavaScript Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vue-64x64.png"
-            alt="Vue Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ruby-64x64.png"
-            alt="Ruby Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/python-64x64.png"
-            alt="Python Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/neovim-64x64.png"
-            alt="Neovim Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/lua-64x64.png"
-            alt="Lua Icon" />
-        </div>
-      </section>
+		<div class="home-layout">
+			<main>
+				<section class="hero">
+					<h1>Lépj be a technológia világába!</h1>
+					<div class="technologies" role="img" aria-label="Technológiák">
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-64x64.png"
+							alt="Gopher Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ferris-64x64.png"
+							alt="Ferris Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-64x64.png"
+							alt="JavaScript Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vue-64x64.png"
+							alt="Vue Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ruby-64x64.png"
+							alt="Ruby Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/python-64x64.png"
+							alt="Python Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/neovim-64x64.png"
+							alt="Neovim Icon" />
+						<img
+							src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/lua-64x64.png"
+							alt="Lua Icon" />
+					</div>
+				</section>
 
-      <section class="courses">
-        <h2>Népszerű kurzusok</h2>
-        <div class="container">
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
-                <span>JavaScript</span>
-              </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="course-body">
-              <h3>
-                <a href="kurzusok/kezdo-javascript/index.html">Kezdő JavaScript</a>
-              </h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
-                <span>Go</span>
-              </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="course-body">
-              <h3><a href="#">Kezdő Go</a></h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
+				<section class="courses">
+					<h2>Népszerű kurzusok</h2>
+					<div class="container">
+						<div class="course">
+							<div class="course-header">
+								<div class="course-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png"
+										alt="JavaScript Icon" />
+									<span>JavaScript</span>
+								</div>
+								<div class="course-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="course-body">
+								<h3>
+									<a href="kurzusok/kezdo-javascript/index.html">Kezdő JavaScript</a>
+								</h3>
+								<p>
+									A JavaScript nemcsak a web legfontosabb programozási nyelve,
+									hanem egyre inkább meghódítja más területeket is.
+								</p>
+							</div>
+							<div class="course-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
+						<div class="course">
+							<div class="course-header">
+								<div class="course-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png"
+										alt="Gopher Icon" />
+									<span>Go</span>
+								</div>
+								<div class="course-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="course-body">
+								<h3><a href="#">Kezdő Go</a></h3>
+								<p></p>
+							</div>
+							<div class="course-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
 
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vim-32x32.png" />
-                <span>Vim</span>
-              </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="course-body">
-              <h3><a href="./kurzusok/vim/index.html">Vim szövegszerkesztő</a></h3>
-              <p>
-								Vim egy klasszikus modális szövegszerkesztő alkalmazás, amelyet mind a mai napig
-								rengeteg helyen használnak.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
-        </div>
-        <div class="action">
-          <a href="kurzusok/index.html" class="btn">Minden kurzus</a>
-        </div>
-      </section>
+						<div class="course">
+							<div class="course-header">
+								<div class="course-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vim-32x32.png"
+										alt="Vim Icon" />
+									<span>Vim</span>
+								</div>
+								<div class="course-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="course-body">
+								<h3><a href="./kurzusok/vim/index.html">Vim szövegszerkesztő</a></h3>
+								<p>
+									Vim egy klasszikus modális szövegszerkesztő alkalmazás, amelyet mind a mai napig
+									rengeteg helyen használnak.
+								</p>
+							</div>
+							<div class="course-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<a href="kurzusok/index.html" class="btn">Minden kurzus</a>
+					</div>
+				</section>
 
-      <section class="paths">
-        <h2>Népszerű tanösvények</h2>
-        <div class="container">
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
-                <span>JavaScript</span>
-              </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="path-body">
-              <h3><a href="#">JavaScript</a></h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="path-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
-                <span>Go</span>
-              </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="path-body">
-              <h3><a href="#">Go</a></h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="path-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
+				<section class="paths">
+					<h2>Népszerű tanösvények</h2>
+					<div class="container">
+						<div class="path">
+							<div class="path-header">
+								<div class="path-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png"
+										alt="JavaScript Icon" />
+									<span>JavaScript</span>
+								</div>
+								<div class="path-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="path-body">
+								<h3><a href="#">JavaScript</a></h3>
+								<p>
+									A JavaScript nemcsak a web legfontosabb programozási nyelve,
+									hanem egyre inkább meghódítja más területeket is.
+								</p>
+							</div>
+							<div class="path-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
+						<div class="path">
+							<div class="path-header">
+								<div class="path-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png"
+									 	alt="Gopher Icon" />
+									<span>Go</span>
+								</div>
+								<div class="path-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="path-body">
+								<h3><a href="#">Go</a></h3>
+								<p></p>
+							</div>
+							<div class="path-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
 
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/rust-32x32.png" />
-                <span>Rust</span>
-              </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="path-body">
-              <h3><a href="#">Rust</a></h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="path-footer">
-              <p>0 tanuló</p>
-            </div>
-          </div>
-        </div>
-        <div class="action">
-          <a href="tanosvenyek/index.html" class="btn">Minden tanösvény</a>
-        </div>
-      </section>
-    </main>
+						<div class="path">
+							<div class="path-header">
+								<div class="path-header-technology">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/rust-32x32.png"
+										alt="Rust Icon" />
+									<span>Rust</span>
+								</div>
+								<div class="path-header-rating">
+									<img
+										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+									<span>0.0</span>
+								</div>
+							</div>
+							<div class="path-body">
+								<h3><a href="#">Rust</a></h3>
+								<p></p>
+							</div>
+							<div class="path-footer">
+								<p>0 tanuló</p>
+							</div>
+						</div>
+					</div>
+					<div class="action">
+						<a href="tanosvenyek/index.html" class="btn">Minden tanösvény</a>
+					</div>
+				</section>
+			</main>
+		</div>
 
     <footer class="site-footer">
       <span><a href="index.html">Zeta Academy</a></span>

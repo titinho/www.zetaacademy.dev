@@ -1,0 +1,38 @@
+.announcement-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 0.5rem 0;
+  width: 100%;
+  position: relative;
+}
+
+.announcement-bar.warning {
+  background-color: var(--surface-warning);
+  color: var(--text-warning);
+}
+
+.announcement-bar span {
+  font-size: 1.5rem;
+}
+
+.announcement-bar button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: var(--surface-warning) 0.2s;
+}
+
+.announcement-bar button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.announcement-bar button img {
+  display: block;
+}

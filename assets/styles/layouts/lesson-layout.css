@@ -1,0 +1,60 @@
+/* Small styles */
+.lesson-layout {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"lesson-content"
+		"lesson-list-sidebar";
+	gap: 2rem;
+	padding: 1rem;
+}
+
+.lesson-list-sidebar {
+	grid-area: lesson-list-sidebar;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.lesson-list-sidebar h3 {
+	text-align: center;
+}
+
+.lesson-content {
+	grid-area: lesson-content;
+}
+
+.sidebar-right {
+	display: none;
+	grid-area: sidebar-right;
+}
+
+.lesson-navigation {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+/* Medium styles */
+@media screen and (width >= 620px) {
+}
+
+/* Large styles */
+@media screen and (width >= 960px) {
+	.lesson-layout {
+		grid-template-columns: 2fr 5fr;
+		grid-template-areas: "lesson-list-sidebar lesson-content";
+	}
+
+	.lesson-list-sidebar {
+		align-items: start;
+	}
+}
+
+/* Extra large styles */
+@media screen and (width >= 1200px) {
+	.lesson-layout {
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-areas: "lesson-list-sidebar lesson-content sidebar-right";
+	}
+}

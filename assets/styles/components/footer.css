@@ -1,0 +1,53 @@
+.site-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0;
+  background: var(--background-emphasised);
+}
+
+.site-footer span a {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.site-footer span a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.site-footer .social {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-footer .social img {
+  color: var(--primary);
+}
+
+.site-footer .facebook:hover {
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/facebook-hover.png);
+}
+
+.site-footer .instagram:hover {
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/instagram-hover.png);
+}
+
+.site-footer .x:hover {
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x-hover.png);
+}
+
+.site-footer .threads:hover {
+  content: url(https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/threads-hover.png);
+}
+
+.site-footer p {
+  color: var(--text-body);
+}
