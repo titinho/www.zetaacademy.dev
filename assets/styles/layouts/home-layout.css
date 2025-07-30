@@ -1,7 +1,8 @@
+/* Small screens */
 .home-layout {
-	display: flex;
-	flex-flow: column nowrap;
-	gap: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 
 /* Courses ------------------------------------------------------------------------------------- */
@@ -9,7 +10,7 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  margin: 0 1rem;
+  margin: 1rem;
   max-width: 1280px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .course:hover {
-  border-color: var(--primary-hover);
+  border-color: var(--primary--hover);
 }
 
 .course-header {
@@ -99,7 +100,7 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
-  margin: 0 1rem;
+  margin: 1rem;
   max-width: 1280px;
 }
 
@@ -120,7 +121,7 @@
 }
 
 .path:hover {
-  border-color: var(--primary-hover);
+  border-color: var(--primary--hover);
 }
 
 .path-header {
@@ -184,25 +185,26 @@
   justify-content: end;
 }
 
-/* Mobile styles */
-@media screen and (width >= 620px) {
-	.courses, .paths {
-		margin: 0 2rem;
-	}
+/* Medium screens */
+@media screen and (width >=620px) {
+  .courses, .paths {
+    margin: 1rem 2rem;
+  }
 }
 
-/* Tablet styles */
-@media screen and (width >= 960px) {
+/* Large screens */
+@media screen and (width >=960px) {
   .courses .container, .paths .container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Desktop styles */
-@media screen and (width >= 1200px) {
-	.courses, .paths {
-		margin: 0 auto;
-	}
+/* Extra large screen */
+@media screen and (width >=1200px) {
+  .courses, .paths {
+		margin: 1rem auto;
+		max-width: min(1280px, calc(100vw - 4rem));
+  }
 
   .courses .container, .paths .container {
     grid-template-columns: 1fr 1fr 1fr;

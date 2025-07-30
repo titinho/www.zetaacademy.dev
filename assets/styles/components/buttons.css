@@ -1,9 +1,10 @@
+/* Small screens */
 .btn {
 	margin: 0;
 	padding: 0.25rem 1rem;
 	line-height: 1.25;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	background-color: var(--btn__background);
 	color: var(--btn__txt);
 	border-radius: 0.5rem;
@@ -25,3 +26,17 @@
 	background-color: #e0e0e0;
 	color: #999;
 }
+
+/* Medium screens */
+@media screen and (width >=620px) {
+	.btn {
+		font-size: 1.5rem;
+		border-radius: 0.5rem;
+	}
+}
+
+/* Large screens */
+@media screen and (width >=960px) {}
+
+/* Extra large screen */
+@media screen and (width >=1200px) {}

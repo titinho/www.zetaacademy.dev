@@ -15,7 +15,7 @@
 }
 
 .site-footer span a:hover {
-  color: var(--primary-hover);
+  color: var(--primary--hover);
   text-decoration: underline;
 }
 

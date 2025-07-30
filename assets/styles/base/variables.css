@@ -1,9 +1,9 @@
 /* Variables */
 :root {
-	--chambray: 58, 97, 135;
+  --chambray: 58, 97, 135;
   --cranberry: 225, 69, 114;
   --cyan: 0, 138, 126;
-	--deep-lilac: 144, 95, 184;
+  --deep-lilac: 144, 95, 184;
   --deep-rose: 198, 70, 107;
   --grotto: 4, 118, 208;
   --grotto-shade-800: 205, 228, 246;
@@ -11,29 +11,37 @@
   --grotto-tint-200: 3, 94, 166;
   --grotto-tint-800: 1, 24, 42;
   --grotto-tint-900: 0, 12, 21;
-	--light-indigo: 102, 107, 200;
-	--midnight-blue: 0, 48, 96;
+  --light-indigo: 102, 107, 200;
+  --midnight-blue: 0, 48, 96;
   --mongo: 234, 106, 4;
   --teal: 0, 137, 171;
   --white: 255, 255, 255;
 
+  --icon-filter-midnight-blue: brightness(0) saturate(100%) invert(15%)
+    sepia(21%) saturate(5942%) hue-rotate(192deg) brightness(95%) contrast(103%);
+  --icon-filter-midnight-chambray: brightness(0) saturate(100%) invert(35%)
+    sepia(17%) saturate(1278%) hue-rotate(169deg) brightness(95%) contrast(94%);
+
   --primary: rgba(var(--midnight-blue), 1);
-  --primary-hover: rgba(var(--chambray), 1);
+  --primary--hover: rgba(var(--chambray), 1);
   --secondary: rgba(var(--grotto), 1);
   --secondary-hover: rgba(var(--grotto-tint-200), 1);
   --accent: rgba(var(--deep-rose), 1);
   --background-default: rgba(var(--grotto-shade-800), 1);
   --background-emphasised: rgba(var(--grotto-shade-900), 1);
 
-	--anchor: rgba(var(--light-indigo), 1);
-	--anchor--hover: rgba(var(--deep-lilac), 1);
+  --icon-filter-primary: var(--icon-filter-midnight-blue);
+  --icon-filter-primary--hover: var(--icon-filter-midnight-chambray);
+
+  --anchor: rgba(var(--light-indigo), 1);
+  --anchor--hover: rgba(var(--deep-lilac), 1);
   --btn__background: rgba(var(--deep-rose), 1);
   --btn__background--hover: rgba(var(--cranberry), 1);
   --btn__txt: rgba(var(--grotto-shade-900), 1);
 
   --surface-warning: rgba(var(--mongo), 0.8);
   --text-header: var(--primary);
-  --text-header--hover: var(--primary-hover);
+  --text-header--hover: var(--primary--hover);
   --text-body: #07243a;
   --heading: "Montserrat", Helvetica, sans-serif;
   --text-warning: rgba(var(--white), 1);

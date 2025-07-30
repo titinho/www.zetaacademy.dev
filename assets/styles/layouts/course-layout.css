@@ -1,4 +1,4 @@
-/* Course curriculum */
+/* Small screens */
 .course-description {
 	margin: 0 1rem;
 }
@@ -14,17 +14,17 @@
 	text-align: center;
 }
 
-/* Medium styles */
+/* Medium screens */
 @media screen and (width >= 620px) {
 	.course-description, .course-curriculum {
 		margin: 0 2rem;
 	}
 }
 
-/* Large styles */
+/* Large screens */
 @media screen and (width >= 960px) {}
 
-/* Extra large styles */
+/* Extra large screens */
 @media screen and (width >= 1200px) {
 	.course-description, .course-curriculum {
 		margin: 0 auto;
