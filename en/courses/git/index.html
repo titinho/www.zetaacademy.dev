@@ -1,11 +1,9 @@
 <!doctype html>
-<html lang="hu-HU">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Vim | Zeta Academy</title>
-
+    <title>Git | Zeta Academy</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,7 +20,6 @@
     <link href="../../../../../assets/styles/components/announcement-bars.css" rel="stylesheet" />
     <link href="../../../../../assets/styles/components/header.css" rel="stylesheet" />
     <link href="../../../../../assets/styles/components/footer.css" rel="stylesheet" />
-
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -37,7 +34,7 @@
 
   <body>
     <div class="announcement-bar warning">
-      <span>Az oldal fejlesztés alatt áll!</span>
+      <span>The page is under development!</span>
       <button>
         <img
           src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark-white-32x32.png"
@@ -49,16 +46,16 @@
       <nav class="navbar-horizontal">
         <ul>
           <li>
-            <h1><a href="../../index.html">ZetaAcademy</a></h1>
+            <h1><a href="index.html">ZetaAcademy</a></h1>
           </li>
-          <li><a href="../../index.html">Főoldal</a></li>
-          <li><a href="../index.html">Kurzusok</a></li>
-          <li><a href="../../tanosvenyek/index.html">Tanösvények</a></li>
-          <li><a href="../../rolunk.html">Rólunk</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses/index.html">Courses</a></li>
+          <li><a href="paths/index.html">Paths</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
       <nav class="navbar-vertical">
-        <a href="../../index.html">ZetaAcademy</a>
+        <a href="index.html">ZetaAcademy</a>
         <img
           src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/bars.svg"
           alt="Bars Icon" />
@@ -67,10 +64,10 @@
             src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark.svg"
             alt="XMark Icon" />
           <ul>
-            <li><a href="../../index.html">Főoldal</a></li>
-            <li><a href="../index.html">Kurzusok</a></li>
-            <li><a href="../../tanosvenyek/index.html">Tanösvények</a></li>
-            <li><a href="../../rolunk.html">Rólunk</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses/index.html">Courses</a></li>
+            <li><a href="paths/index.html">Paths</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </nav>
@@ -78,28 +75,13 @@
 
     <main>
       <article>
-        <h1>Vim szövegszerkesztő</h1>
+        <h1>Git - The most popular version control system</h1>
         <p>
-          Vim egy klasszikus modális szövegszerkesztő alkalmazás, amelyet mind a mai napig rengeteg
-          helyen használnak. A modális kifejezés azt jelenti, hogy az alkalmazás mindig valamilyen
-          módban fut. Ezek a módok a következők lehetnek:
+          In the modern software devepment process it is crucial to use version control system
+          since developers make mistakes and sometimes it is useful to go back to the last working
+          version. At the same time VCS make it easier that more developers work togather on the
+          code base.
         </p>
-        <ul>
-          <li>
-            <span class="highlight">Normal</span>: a szövegben leginkább navigálásra használható
-          </li>
-          <li><span class="highlight">Insert</span>: szövegbevitelhez használjuk</li>
-          <li>
-            <span class="highlight">Visual</span>: a szöveg egy részének a kijelölésére használjuk
-          </li>
-          <li>
-            <span class="highlight">V-line</span>: ugyanúgy szövegkijelölésre használjuk, mint a
-            <span class="highlight">Visual</span> módot, viszont a kijelölés soronként történik
-          </li>
-          <li>
-            <span class="highlight">Command line</span>: ez a mód parancsok bevitelére szolgál
-          </li>
-        </ul>
       </article>
     </main>
 
@@ -142,6 +124,6 @@
       <p>&copy; 2025. Zeta Academy. Minden jog fenntartva.</p>
     </footer>
 
-    <script src="../scripts/main.js"></script>
+    <script src="../../../../../scripts/pages/course.js" type="module"></script>
   </body>
 </html>

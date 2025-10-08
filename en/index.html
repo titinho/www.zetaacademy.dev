@@ -13,10 +13,16 @@
       rel="icon"
       type="image/x-icon"
       href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
-    <link rel="stylesheet" href="../assets/styles/main.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
+    <link href="../assets/styles/base/variables.css" rel="stylesheet" />
+    <link href="../assets/styles/base/reset.css" rel="stylesheet" />
+    <link href="../assets/styles/base/base.css" rel="stylesheet" />
+    <link href="../assets/styles/layouts/home-layout.css" rel="stylesheet" />
+    <link href="../assets/styles/components/announcement-bars.css" rel="stylesheet" />
+    <link href="../assets/styles/components/buttons.css" rel="stylesheet" />
+    <link href="../assets/styles/components/footer.css" rel="stylesheet" />
+    <link href="../assets/styles/components/header.css" rel="stylesheet" />
+    <link href="../assets/styles/components/hero.css" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -29,7 +35,7 @@
   </head>
 
   <body>
-		<div class="announcement-bar warning">
+    <div class="announcement-bar warning">
       <span>The page is under development!</span>
       <button>
         <img
@@ -39,217 +45,329 @@
     </div>
 
     <header class="site-header">
-      <span><a href="index.html">Zeta Academy</a></span>
-      <nav class="site-navigation">
+      <nav class="navbar-horizontal">
         <ul>
+          <li>
+            <h1><a href="index.html">ZetaAcademy</a></h1>
+          </li>
           <li><a href="index.html">Home</a></li>
           <li><a href="courses/index.html">Courses</a></li>
-          <li><a href="paths/index.html">Learning Paths</a></li>
-          <li><a href="about-me.html">About Me</a></li>
+          <li><a href="paths/index.html">Paths</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+      </nav>
+      <nav class="navbar-vertical">
+        <a href="index.html">ZetaAcademy</a>
+        <img
+          src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/bars.svg"
+          alt="Bars Icon" />
+        <div class="navbar-vertical-content">
+          <img
+            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark.svg"
+            alt="XMark Icon" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses/index.html">Courses</a></li>
+            <li><a href="paths/index.html">Paths</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <main>
-      <section class="welcome">
-        <h1>Enter the world of technology!</h1>
-        <div class="technologies">
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-64x64.png"
-            alt="Gopher Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ferris-64x64.png"
-            alt="Ferris Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-64x64.png"
-            alt="JavaScript Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vue-64x64.png"
-            alt="Vue Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ruby-64x64.png"
-            alt="Ruby Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/python-64x64.png"
-            alt="Python Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/neovim-64x64.png"
-            alt="Neovim Icon" />
-          <img
-            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/lua-64x64.png"
-            alt="Lua Icon" />
-        </div>
-      </section>
+    <div class="home-layout">
+      <main>
+        <section class="hero">
+          <h1>Enter the world of technology!</h1>
+          <div class="technologies">
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-64x64.png"
+              alt="Gopher Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ferris-64x64.png"
+              alt="Ferris Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-64x64.png"
+              alt="JavaScript Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vue-64x64.png"
+              alt="Vue Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/ruby-64x64.png"
+              alt="Ruby Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/python-64x64.png"
+              alt="Python Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/neovim-64x64.png"
+              alt="Neovim Icon" />
+            <img
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/lua-64x64.png"
+              alt="Lua Icon" />
+          </div>
+        </section>
 
-      <section class="courses">
-        <h2>Popular courses</h2>
-        <div class="container">
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
-                <span>JavaScript</span>
+        <section class="courses">
+          <h2>Popular courses</h2>
+          <div class="container">
+            <!-- Beginner JavaScript -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
               </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
+              <div class="course-body">
+                <h3>
+                  <a href="./courses/beginner-javascript/index.html">Beginner JavaScript</a>
+                </h3>
+                <p>
+                  JavaScript is not only one of the most popular scripting languages of the web
+                  development but it is gaining popularity on other fields of IT.
+                </p>
               </div>
-            </div>
-            <div class="course-body">
-              <h3>
-                <a href="./courses/beginner-javascript/index.html"
-                  >Beginner JavaScript</a
-                >
-              </h3>
-              <p>
-                JavaScript is not only one of the most popular scripting
-                languages of the web development but it is gaining popularity on
-                other fields of IT.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 participants</p>
-            </div>
-          </div>
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
-                <span>Go</span>
-              </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
+              <div class="course-footer">
+                <p>0 participants</p>
               </div>
             </div>
-            <div class="course-body">
-              <h3><a href="#">Beginner Go</a></h3>
-              <p>
-                Go is a popular compiled programming language that is backed by
-                Google. Applications like Docker and Kubernetes, that changed
-                the developer's world, are also written in Go.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 participants</p>
-            </div>
-          </div>
 
-          <div class="course">
-            <div class="course-header">
-              <div class="course-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vim-32x32.png" />
-                <span>Vim</span>
+            <!-- Beginner Go -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
+                  <span>Go</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
               </div>
-              <div class="course-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
+              <div class="course-body">
+                <h3><a href="#">Beginner Go</a></h3>
+                <p>
+                  In this course you will familiarize yourself with the foundations of the Go
+                  programming language. This base knowledge will help you to create more complex
+                  things like server or TUI applications.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
               </div>
             </div>
-            <div class="course-body">
-              <h3><a href="#">Vim</a></h3>
-              <p>
-								Vim is a classic modal text editor application that is still widely used today.
-              </p>
-            </div>
-            <div class="course-footer">
-              <p>0 participants</p>
-            </div>
-          </div>
-        </div>
-        <div class="action">
-          <a href="courses/index.html" class="btn">All Courses</a>
-        </div>
-      </section>
 
-      <section class="paths">
-        <h2>Popular learning paths</h2>
-        <div class="container">
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
-                <span>JavaScript</span>
+            <!-- Beginner Rust -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/rust-32x32.png"
+                    alt="Rust Icon" />
+                  <span>Rust</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
               </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
+              <div class="course-body">
+                <h3><a href="#">Beginner Rust</a></h3>
+                <p>
+                  In this course you can get to know the building blocks of one of the most
+                  difficult though one of the most popular programming language.
+                </p>
               </div>
-            </div>
-            <div class="path-body">
-              <h3><a href="#">JavaScript</a></h3>
-              <p>
-								JavaScript is the cornerstone of the web development and is rapidly gaining
-								popularity in other fields of IT. This learning path will you guide through from
-								the fundamentals to more advanced concepts.
-              </p>
-            </div>
-            <div class="path-footer">
-              <p>0 participants</p>
+              <div class="course-footer">
+                <p>0 tanuló</p>
+              </div>
             </div>
           </div>
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
-                <span>Go</span>
-              </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
-              </div>
-            </div>
-            <div class="path-body">
-              <h3><a href="#">Go</a></h3>
-              <p>
-                A JavaScript nemcsak a web legfontosabb programozási nyelve,
-                hanem egyre inkább meghódítja más területeket is.
-              </p>
-            </div>
-            <div class="path-footer">
-              <p>0 participants</p>
-            </div>
+          <div class="action">
+            <a href="courses/index.html" class="btn">All Courses</a>
           </div>
+        </section>
 
-          <div class="path">
-            <div class="path-header">
-              <div class="path-header-technology">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/vim-32x32.png" />
-                <span>Vim</span>
+        <section class="paths">
+          <h2>Popular learning paths</h2>
+          <div class="container">
+            <!-- JavaScript -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
               </div>
-              <div class="path-header-rating">
-                <img
-                  src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-                <span>0.0</span>
+              <div class="course-body">
+                <h3><a href="#">JavaScript</a></h3>
+                <p>
+                  JavaScript is the cornerstone of the web development and is rapidly gaining
+                  popularity in other fields of IT. This learning path will you guide through from
+                  the fundamentals to more advanced concepts.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
               </div>
             </div>
-            <div class="path-body">
-              <h3><a href="#">Vim</a></h3>
-              <p>
-								Vim is a classic modal text editor application that is still widely used today.
-              </p>
+
+            <!-- Go -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
+                  <span>Go</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="#">Go</a></h3>
+                <p></p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
             </div>
-            <div class="path-footer">
-              <p>0 participants</p>
+
+            <!-- Rust -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/rust-32x32.png"
+                    alt="Rust Icon" />
+                  <span>Rust</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="#">Rust</a></h3>
+                <p></p>
+              </div>
+              <div class="course-footer">
+                <p>0 tanuló</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="action">
-          <a href="paths/index.html" class="btn">All Paths</a>
-        </div>
-      </section>
-    </main>
+          <div class="action">
+            <a href="paths/index.html" class="btn">All Paths</a>
+          </div>
+        </section>
+
+        <section class="tools">
+          <h2>Developer tools</h2>
+          <div class="container">
+            <!-- Git -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/git-32x32.png"
+                    alt="Git Icon" />
+                  <span>Git</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="./courses/git/index.html">Git</a></h3>
+                <p>
+                  Git is the most popular version control application that's usage is crucial in
+                  modern development processes.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
+            </div>
+
+            <!-- Vim -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/vim-32x32.png"
+                    alt="Vim Icon" />
+                  <span>Vim</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3>
+                  <a href="./courses/vim/index.html">Vim text editor </a>
+                </h3>
+                <p>
+                  Vim is classic modal text editor application, that is still used in many
+                  environments.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
+            </div>
+
+            <!-- Neovim -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/tooling/neovim-32x32.png"
+                    alt="Neovim Icon" />
+                  <span>Neovim</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="#">Neovim</a></h3>
+                <p></p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
+            </div>
+          </div>
+          <div class="action">
+            <a href="tanosvenyek/index.html" class="btn">All Developer Tools</a>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer class="site-footer">
       <span><a href="index.html">Zeta Academy</a></span>
