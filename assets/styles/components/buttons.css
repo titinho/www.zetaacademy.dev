@@ -1,7 +1,7 @@
 /* Small screens */
 .btn {
 	margin: 0;
-	padding: 0.25rem 1rem;
+	padding: 0.5rem 1rem;
 	line-height: 1.25;
 	text-decoration: none;
 	font-size: 1.25rem;
@@ -20,6 +20,7 @@
 
 .btn:hover {
 	background-color: var(--btn__background--hover);
+	color: var(--btn__txt);
 }
 
 .btn.disabled:hover {
