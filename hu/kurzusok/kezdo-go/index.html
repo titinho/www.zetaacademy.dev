@@ -1,9 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kezdő Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -13,18 +16,105 @@
 
       gtag("config", "G-H2GDYC1PFY");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Go for Beginners</title>
     <link
       rel="icon"
       type="image/x-icon"
-      href="../../assets/images/favicon.ico" />
+      href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
+    <link href="../../../../../assets/styles/base/variables.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/base/reset.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/base/base.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/components/announcement-bars.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/components/header.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/components/footer.css" rel="stylesheet" />
+    <link href="../../../../../assets/styles/layouts/course.css" rel="stylesheet" />
   </head>
   <body>
-    <header-nav></header-nav>
-    <h1>Go kezdőknek</h1>
-    <div class="lessons"></div>
-    <script src="go-for-beginners.js" type="module"></script>
+    <div class="announcement-bar warning">
+      <span>Az oldal fejlesztés alatt áll!</span>
+      <button>
+        <img
+          src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark-white-32x32.png"
+          alt="xmark" />
+      </button>
+    </div>
+
+    <header class="site-header">
+      <nav class="navbar-horizontal">
+        <ul>
+          <li>
+            <h1><a href="../../index.html">ZetaAcademy</a></h1>
+          </li>
+          <li><a href="../../index.html">Főoldal</a></li>
+          <li><a href="../index.html">Kurzusok</a></li>
+          <li><a href="../../tanosvenyek/index.html">Tanösvények</a></li>
+          <li><a href="../../rolunk.html">Rólunk</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar-vertical">
+        <a href="../../index.html">ZetaAcademy</a>
+        <img
+          src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/bars.svg"
+          alt="Bars Icon" />
+        <div class="navbar-vertical-content">
+          <img
+            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark.svg"
+            alt="XMark Icon" />
+          <ul>
+            <li><a href="../../index.html">Főoldal</a></li>
+            <li><a href="../index.html">Kurzusok</a></li>
+            <li><a href="../../tanosvenyek/index.html">Tanösvények</a></li>
+            <li><a href="../../rolunk.html">Rólunk</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article class="course-description">
+        <h1>Go kezdőknek</h1>
+        <div class="lessons"></div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <span><a href="../../index.html">Zeta Academy</a></span>
+      <ul class="social">
+        <li>
+          <a href="#">
+            <img
+              class="facebook"
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/facebook.png"
+              alt="Facebook Icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              class="instagram"
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/instagram.png"
+              alt="Instagram Icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              class="x"
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/x.png"
+              alt="X Icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img
+              class="threads"
+              src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/social/threads.png"
+              alt="Threads Icon" />
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2025. Zeta Academy. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../../../../../scripts/pages/course.js" type="module"></script>
   </body>
 </html>
