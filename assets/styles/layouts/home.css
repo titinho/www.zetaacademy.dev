@@ -1,0 +1,68 @@
+.home-layout {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+/* Courses ------------------------------------------------------------------------------------- */
+.courses {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin: 1rem;
+  max-width: 1280px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+/* Path ---------------------------------------------------------------------------------------- */
+.paths {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin: 1rem;
+  max-width: 1280px;
+}
+
+/* Tools --------------------------------------------------------------------------------------- */
+.tools {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  margin: 1rem;
+  max-width: 1280px;
+}
+
+/* Medium screens */
+@media screen and (width >=620px) {
+  .courses,
+  .paths,
+  .tools {
+    margin: 1rem 2rem;
+  }
+}
+
+/* Large screens */
+@media screen and (width >=960px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Extra large screen */
+@media screen and (width >=1200px) {
+  .courses,
+  .paths,
+  .tools {
+    margin: 1rem auto;
+    max-width: min(1280px, calc(100vw - 4rem));
+  }
+
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

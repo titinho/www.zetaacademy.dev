@@ -13,10 +13,19 @@
       rel="icon"
       type="image/x-icon"
       href="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/brand/favicon.ico" />
+
+    <link href="../../assets/styles/base/variables.css" rel="stylesheet" />
+    <link href="../../assets/styles/base/reset.css" rel="stylesheet" />
+    <link href="../../assets/styles/base/base.css" rel="stylesheet" />
+    <link href="../../assets/styles/components/announcement-bars.css" rel="stylesheet" />
+    <link href="../../assets/styles/components/course-card.css" rel="stylesheet" />
+    <link href="../../assets/styles/components/footer.css" rel="stylesheet" />
+    <link href="../../assets/styles/components/header.css" rel="stylesheet" />
+    <link href="../../assets/styles/components/hero.css" rel="stylesheet" />
+    <link href="../../assets/styles/layouts/courses.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/styles/main.css" />
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2GDYC1PFY"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -29,7 +38,7 @@
   </head>
 
   <body>
-		<div class="announcement-bar warning">
+    <div class="announcement-bar warning">
       <span>The page is under development!</span>
       <button>
         <img
@@ -38,50 +47,133 @@
       </button>
     </div>
 
-		<main>
-			<article>
-				<h1>Courses</h1>
-      	<section class="courses">
-					<h2>Beginner Courses</h2>
-					<div class="container">
-						<div class="course">
-							<div class="course-header">
-								<div class="course-header-technology">
-									<img
-										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
-									<span>JavaScript</span>
-								</div>
-								<div class="course-header-rating">
-									<img
-										src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
-									<span>0.0</span>
-								</div>
-							</div>
-							<div class="course-body">
-								<h3>
-									<a href="./beginner-javascript/index.html"
-										>Beginner JavaScript</a
-									>
-								</h3>
-								<p>
-									JavaScript is not only one of the most popular scripting
-									languages of the web development but it is gaining popularity on
-									other fields of IT.
-								</p>
-							</div>
-							<div class="course-footer">
-              <p>0 participants</p>
+    <header class="site-header">
+      <nav class="navbar-horizontal">
+        <ul>
+          <li>
+            <h1><a href="../index.html">ZetaAcademy</a></h1>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../courses/index.html">Courses</a></li>
+          <li><a href="../paths/index.html">Paths</a></li>
+          <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <nav class="navbar-vertical">
+        <a href="../index.html">ZetaAcademy</a>
+        <img
+          src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/bars.svg"
+          alt="Bars Icon" />
+        <div class="navbar-vertical-content">
+          <img
+            src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/xmark.svg"
+            alt="XMark Icon" />
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../courses/index.html">Courses</a></li>
+            <li><a href="../paths/index.html">Paths</a></li>
+            <li><a href="../about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h1>Courses</h1>
+        <section class="courses">
+          <h2>Beginner Courses</h2>
+          <div class="container">
+            <!-- Beginner JavaScript -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/javascript-32x32.png" />
+                  <span>JavaScript</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3>
+                  <a href="./javascript-for-beginners/index.html"> JavaScript for Beginners </a>
+                </h3>
+                <p>
+                  JavaScript is not only one of the most popular scripting languages of the web
+                  development but it is gaining popularity on other fields of IT.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
+            </div>
+
+            <!-- Beginner Go -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/gopher-32x32.png" />
+                  <span>Go</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="./go-for-beginner/index.html">Go for Beginner</a></h3>
+                <p>
+                  In this course you will familiarize yourself with the foundations of the Go
+                  programming language. This base knowledge will help you to create more complex
+                  things like server or TUI applications.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
+            </div>
+
+            <!-- Rust for Beginners -->
+            <div class="course">
+              <div class="course-header">
+                <div class="course-header-technology">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/programming-languages/rust-32x32.png"
+                    alt="Rust Icon" />
+                  <span>Rust</span>
+                </div>
+                <div class="course-header-rating">
+                  <img
+                    src="https://zetaacademy.s3.eu-central-1.amazonaws.com/icons/fontawesome/star-32x32.png" />
+                  <span>0.0</span>
+                </div>
+              </div>
+              <div class="course-body">
+                <h3><a href="./rust-for-beginners/index.html">Rust for Beginners</a></h3>
+                <p>
+                  In this course you can get to know the building blocks of one of the most
+                  difficult though one of the most popular programming language.
+                </p>
+              </div>
+              <div class="course-footer">
+                <p>0 participants</p>
+              </div>
             </div>
           </div>
-
-				</section>
-				<section>
-					<h2>Intermediate Courses</h2>
-				</section>
-				<section>
-					<h2>Advanced Courses</h2>
-				</section>
-			</article>
+        </section>
+        <!-- <section> -->
+        <!--   <h2>Intermediate Courses</h2> -->
+        <!-- </section> -->
+        <!-- <section> -->
+        <!--   <h2>Advanced Courses</h2> -->
+        <!-- </section> -->
+      </article>
     </main>
 
     <footer class="site-footer">
