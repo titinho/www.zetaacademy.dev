@@ -103,6 +103,6 @@
       </a>
     </li>
   </ul>
-  <p>&copy; 2025. Zeta Academy. All rights reserved.</p>
+  <p>&copy; 2026. Zeta Academy. All rights reserved.</p>
 </footer>
 ```
